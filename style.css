@@ -1,0 +1,30 @@
+p {color: black;}
+table,
+ thead,
+ tbody,
+ tfoot,
+ tr,
+ th,
+ td {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 1px;
+    border-collapse: inherit;
+    border-spacing: 0;
+    border-color: black;
+    vertical-align: inherit;
+    text-align: left;
+    font-weight: inherit;
+    -webkit-border-horizontal-spacing: 0;
+    -webkit-border-vertical-spacing: 0;
+}
+th, td {
+    display: inline;
+}
+
+table {
+    border-collapse: collapse;
+  }
