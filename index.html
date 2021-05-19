@@ -167,30 +167,31 @@ Another important factor is the rating
              <! -- ================================================== -->
             <hr class="featurette-divider" id="id_networks">
             <div class="row featurette">
-              <h2 class="featurette-heading">When to rent out your Housing? </h2>
+              <h2 class="featurette-heading">Networks - how are the wines connected? </h2>
                 <div class="col-md-12">
                   <p class="lead">
-                       The majority of people travelling to Denmark and Copenhagen, come durng the summertime. The Dansih summer with a large Danish softice with guf and a Carlsberg beer is not to resist, which is visible on the yearly distribution of visiters who rent a housing in Copenhagen with Airbnb. Absolutly most visiters are seen from May to September, and fewest in January and February. This is illustrated in the visualization below, where the total number of reviews in Copenhagen from January 2012 until December 2019 are seen. As you see, you came at the right time! Airbnb is trending right now! 
-                  </p>
+Now to the real content, ..
+			</p>
 		  <p class="lead">
 			  A review is obtained after an end estate rental, and is the same as one or more nights, namely a stay. Eight yearly distributions are visuable, all showing the same tendency. Most people are renting a housing in the summer half of the year, and more and more visiters are seen though the years from 2012 until 2019! The same color combination is used though a year, where the darkest blue illustrates January and the yellow illustrates December.
 		  </p>
+			                  <div>
+                      <img src="images/Grapg_grapes_it.png" width="95%" class="center-image">
+                  </div>
                   <div>
-                      <img src="images/WC_fr.png" width="95%" class="center-image">
+                      <img src="images/Grapg_grapes_fr.png" width="95%" class="center-image">
                   </div>
                   <p class="lead">
                         Having a closer look at only a single year, namely 2019, a lot of spikes are seen in the visualization below. Again a small color palette is used, now to illustrate one week. Yellow is now mondays and the darker blue colors illustrate the weekends. Most reviews are defenetly seen sundays to tuesdays. As mentioned, the plot illustates the number of reviews and not the the exact start or end date of a stay. By this reason, the weekly pattern becomes a little skeewed with a few days, having the assumption that most rentings are seen in the weekends. This assumption then still remains true. 
                   </p>
-                  <div>
-                      <img src="images/WC_it.png" width="95%" class="center-image">
-                  </div>
+
 		  <p class="lead">
 		      So if you decide to rent out your housing and become a Airbnb host then be prepared every weekend, and especially thoughout the summer. You will probably get a guest or two!
 		  </p>
                 </div>
             </div>
             <! -- ================================================== -->
-            <hr class="featurette-divider" id="id_neighbourhoods">
+            <hr class="featurette-divider" id="id_wordclouds">
             <div class="row featurette">
                 <div class="col-md-12">
                     <h2 class="featurette-heading">The Trendy Neighbourhoods </h2>
@@ -198,6 +199,12 @@ Another important factor is the rating
 		    <p class="lead">
 			We have seen that most listings are located in the most central neighbourhoods of Copenhagen, but what neighbourhoods do the best job? The table below provides a lot of fun facts about the different neighbourhoods from exact numbers. Wuhu! We see that it is easiest to rent out a listing, from the average number of reviews per listing, if it is located in Indre By or Vesterbro-Kongens Enghave. Opposite it is most difficult if it is located in Valby or Østerbro. It sounds a little strange with Østerbro, while this neighbourhood is in top 5 most central. Maybe it is due to the expensive prices in this neighbourhood compared to Vesterbro-Kongens Enghave and Nørrebro which are comparable neighbourhoods from their distance to the center.
 		    </p>
+			<div>
+                      <img src="images/WC_it.png" width="95%" class="center-image">
+                  </div>
+			                  <div>
+                      <img src="images/WC_fr.png" width="95%" class="center-image">
+                  </div>
 		    <font size="15">
                     <table style="border-collapse: collapse; border: none; border-spacing: 0px; width: 100%; height: 200px">
 			<tr>
@@ -454,43 +461,35 @@ Another important factor is the rating
                     <p class="lead">
                         To get an understanding of what neighbourhoods the visiters like the most, you find how many percent of each neighbourhood get what review score rating from the visualization below.
                     </p>    
-                    <div>
-                      <object class="ob" data="visualizations/Bokeh_num_reviews_percentage.html" width="100%" height="600px"></object>
-                    </div>
                     <p class="lead">
                       The illustration is interactive and can be used as you want. Check out your own neighbourhood! Do people like your neighbourhood? Even though the rating score ranges from 0 to 100, absolutley the most review rating scores are higher than 80, seen from the illustration, so visiters in general seem very satisfied with their stay. Then no worries, new visiters will love to rent your housing!  
                     </p>
                 </div>
             </div>
             <! --  ================================================== -->
-            <hr class="featurette-divider" id="id_competitors_prices">
+            <hr class="featurette-divider" id="id_communities">
             <div class="row featurette">
               <div class="col-md-12">
                     <h2 class="featurette-heading"> Competitors Prices</h2>
                     <p class="lead">
                         Before attacking the Airbnb market as a new host, it is worth investigating the prices of your competitive hosts's listings around Copenhagen and within your own neighbourhood. All investigated prices are 'per night' and in DKK. First an overview of all listing prices!
                     </p>
+		      
+		      <div>
+                        <img src="images/WC_it_communities.png" width="95%" class="center-image">
+                    </div>
                     <div>
-                        <img src="visualizations/Jitter_prices.png" width="95%" class="center-image">
+                        <img src="images/WC_fr_communities.png" width="95%" class="center-image">
                     </div>
                     <p class="lead">
                          Absolutly most listings lie in the price range from 300 DKK to 1000 DKK. Most prices are set to the nearest 100, 500 or 1000 indicated by the strong majority of observations at these prices. Only a smaller number of listings are priced higher than 2000 DKK per night. A map locates the different listings just seen in the jitterplot. From zooming in and moving around, it is apparent that the more central the location of the listing is, the more expensive the renting price is per night. Opposite, the farther we get from the center of Copenhagen, the cheaper a listing becomes per night. What is also noticable is, that listings near water of any kind, whether it is the sea, the lakes of Copenhagen or the canals, are more expensive. This illustrative map ranges shows prices from 0 DKK to 2000 DKK (blue to magenta colors). Listings more expensive than 2000 DKK are marked magenta as well, indicating that these housings are very expensive per night!. 
                      </p>
-                     <div>
-                        <object class="ob" data="visualizations/Price_map.html" width="90%" height="550px"></object>
-                     </div>
                      <p class="lead">
                         We know that Indre by has the highest listing prices per night, and that the listing prices become lower the fare we get from the centrum. A little zoom on the different neighbourhoods in the map independently makes you able to go around tracking the information you are looking for. Check out your own neighbourhood and compare the prices with other neighbourhoods'. This same investigation can be performed on the interactive visualization below. From here it is clear that the regions providing the lowest prices are Bispebjerg, Vanløse and Brønshøj-Husum being the more western neighbourhoods of Copenhagen.
                     </p>
-                    <div>
-                        <object class="ob" data="visualizations/Bokeh_price_percentage.html" width="100%" height="600px"></object>
-                    </div>
                     <p class="lead">
                          Okay, so for now our assumptions are that you can charge a higher price for your housing if it is located close to the centrum of Copenhagen or near water of any kind. Let's see if a Machine Learning algorithm, namely K-Nearest Neighbors (KNN), can prove our assumptions drawn from the previous visualizations. KNN is a classification algorithm, here used to find out at what locations, all around Copenhagen, you can charge more than 1000 DKK per night! Solely based on the location! Pretty nice, right?
                     </p>
-                    <div>
-                        <object class="ob" data="visualizations/K_nearest_map.html" width="75%" height="650px"></object>
-                    </div>
                     <p class="lead">
                         Wow! A grid full of points and full of super cool information! In the red areas you can take more than 1000 DKK per night at your housing solely based on the location! Assumptions proved! You can take a higher price per night, if your housing is located in the centrum of Copenhagen or near water.  
                     </p>
@@ -498,7 +497,7 @@ Another important factor is the rating
                 </div>
             </div>
             <! -- ================================================== -->
-            <hr class="featurette-divider" id="id_predict_price">
+            <hr class="featurette-divider" id="id_sentiment">
             <div class="row featurette">
               <div class="col-md-12">
                <h2 class="featurette-heading"> Price Guide - Predict the Price of your own Housing</h2>
@@ -536,9 +535,7 @@ Another important factor is the rating
                     <div class="col-lg-12">
                     <label class="mr-sm-2" for="iii2">Find the latitude and longitude of your listing by zooming and clicking on the map </label>
                     
-                    <div>
-                        <object class="ob" data="visualizations/Map_find_latlon.html" width="80%" height="400px  class="center" "></object>
-                    </div>
+
 		    </div>
                      
                      <div class="col-lg-12">
@@ -621,18 +618,7 @@ Another important factor is the rating
                           </select>
                         </div>
                      
-                     
-                        <!--<div class="form-group col-md-4">
-                          <label class="mr-sm-2" for="iii9">Bedrooms</label
-                          <select class="custom-select mr-sm-2" id="iii9">
-                            <option selected value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                          </select>
-                        </div>-->
+                    
                      
                         <div class="form-group col-md-4">
                           <label class="mr-sm-2" for="iii13">Number of bedrooms</label>
@@ -831,81 +817,7 @@ Another important factor is the rating
                 </div>
                 
                 
-                <script>
-                  function updatePrice() {
-                    document.getElementById("iiio").innerHTML = "Calculating price ...";
-                    try {
-                      var ii0 = parseFloat(document.getElementById("iii0").value);
-                      var ii1 = parseFloat(document.getElementById("iii1").value);
-                      var ii4 = document.getElementById("iii4").checked ? 1 : 0;
-                      var ii3 = parseFloat(document.getElementById("iii3").value);
-                      var ii2 = parseFloat(document.getElementById("iii2").value);
-                      var ii5 = parseFloat(document.getElementById("iii5").value);
-                      var ii6 = parseFloat(document.getElementById("iii6").value);
-                      var ii7 = parseFloat(document.getElementById("iii7").value);
-                      var ii8 = parseFloat(document.getElementById("iii8").value);
-                      var ii9 = parseFloat(document.getElementById("iii9").value);
-                      var ii10 = parseFloat(document.getElementById("iii10").value);
-                      var ii11 = parseFloat(document.getElementById("iii11").value);
-                      var ii12 = parseFloat(document.getElementById("iii12").value);
-                      var ii13 = parseFloat(document.getElementById("iii13").value);
-                      var ii14 = parseFloat(document.getElementById("iii14").value);
-                      var ii15 = document.getElementById("iii15").checked ? 1 : 0;
-                      var ii16 = document.getElementById("iii16").checked ? 1 : 0;
-                      var ii17 = document.getElementById("iii17").checked ? 1 : 0;
-                      var ii18 = document.getElementById("iii18").checked ? 1 : 0;
-                      var ii19 = document.getElementById("iii19").checked ? 1 : 0;
-                      var ii20 = document.getElementById("iii20").checked ? 1 : 0;
-                      var ii21 = document.getElementById("iii21").checked ? 1 : 0;
-                      var ii22 = document.getElementById("iii22").checked ? 1 : 0;
-                      var ii23 = document.getElementById("iii23").checked ? 1 : 0;
-
-                      $.ajax({
-                        url: 'https://europe-west3-danskespil-907.cloudfunctions.net/price_predictor_1',
-                        cache: 'false',
-                        dataType: 'json',
-                        type: 'POST',
-                        data: {
-                          inputs0: ii0,
-                          inputs1: ii1,
-                          inputs2: ii2,
-                          inputs3: ii3,
-                          inputs4: ii4,
-                          inputs5: ii5,
-                          inputs6: ii6,
-                          inputs7: ii7,
-                          inputs8: ii8,
-                          inputs9: ii9,
-                          inputs10: ii10,
-                          inputs11: ii11,
-                          inputs12: ii12,
-                          inputs13: ii13,
-                          inputs14: ii14, 
-                          inputs15: ii15,
-                          inputs16: ii16,
-                          inputs17: ii17,
-                          inputs18: ii18,
-                          inputs19: ii19, 
-                          inputs20: ii20,
-                          inputs21: ii21,
-                          inputs22: ii22,
-                          inputs23: ii23
-                        },
-                        success: function(data) {
-                          document.getElementById("iiio").innerHTML =  Math.round(data.price * 100) / 100 + " DKK per night";
-                        },
-                        error: function(error) {
-                          console.log(error);
-                          document.getElementById("iiio").innerHTML = "There was a server error, your are missing some input";
-                        }
-                      });
-
-                    } catch (error) {
-                      console.log(error);
-                      document.getElementById("iiio").innerHTML = "There was an error converting the input to floats, please check your input";
-                    }
-                  }
-                  </script>
+       
                 
             </div>
           </div>
@@ -962,7 +874,7 @@ Another important factor is the rating
         <!-- FOOTER -->
         <footer class="container">
             <p class="float-right"><a href="#">Back to top</a></p>
-            <p>Stine Amtoft Nielsen (s164201), Thina Thøgersen (s165541), Maika Lindkvist (s164192) <br> 02806 Social Data and Visualizations <br> Technical University of Denmark <br> May 2021</p>
+            <p>Maika Lindkvist Jensen (s164192) <br> 0.. Social Data and Visualizations <br> Technical University of Denmark <br> May 2021</p>
         </footer>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>  
