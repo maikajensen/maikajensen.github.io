@@ -109,49 +109,63 @@ th {
                     <h2 class="featurette-heading">Let's start with the basics </h2>
 	 	    <p class="lead">
 			Let us have a look at what data we are dealing with.     
-			Is the thought of renting out your own housing totally new for you, and do you not know where and how to get started? Let us help you! We provide you with all the 'need to know' and 'nice to know' before getting comfortable renting out your housing. We show you the distribution of listings all around Copenhagen, show you how huge Airbnb has become the last couple of years, learn you when it is most optimal to rent out your housing, guide you through the different neighbourhoods of Copenhagen to see who are trending and provide you with information about your competitive listings' prices. After collecting all this information in your knapsack, you are almost ready to attack the Airbnb market and become a host. But what price can you take for a night at your place? Don't worry! We have collected a lot of information about the existing Airbnb listings in Copenhagen, and trained a machine learning model to offer you a guided price for your place. You just have to fill in the properties of your housing, and here you go! Now you are ready to attack the Airbnb market.
 		    </p>
 		    <p class="lead">
-		        Let's get started with your Airbnb journey by having a look at the large number of offered listings in Copenhagen and their locations. The colors of the listings tell what neighbourhoods they belong to. Try zooming in on the interactive map and have a look around. Get a feeling of the locations of the different neighbourhoods of Copenhagen.
-		    </p>
+		        First of all, lets see where most of the wines are from. In the maps below, we see the wineries in which most wines are from in respectively Italy and France. Hover over the map to see more details!  
+			</p>
 		    
                     <div>
                         <object class="ob" data="images/Italy_map_winery.html" width="90%" height="550px"></object>
                     </div>
-                    <p class="lead">
-                        With Airbnb you can rent out a lising whether it is an entire appartment, a private room, a shared room or even a hotel room. Whether you consider renting out your entire appartment or just a single room, it is all possible. To get an overview of where different listing types are located and to understand the trends, check out the map. The red markers locate the 'entire homes/appartments', the green locate the 'private rooms', the blue locate the 'hotel rooms' and the yellow locate the 'shared rooms'.
-                    </p>
+                   
                   <div>
                         <object class="ob" data="images/France_map_winery.html" width="90%" height="550px"></object>
                   </div>
                   
                   <p class="lead">
-                        Everything is possible, but as you see, most listings are entire homes/appartments or private rooms and there is many. Most listings are located in 'Indre by' being the most central neighbourhood of Copenhagen, just see the visualization below. This is where you find the amusement park Tivoli, the hippie area Christiana, the beautiful garden Kongens Have and many other turist attractions, so this is not remarkable. And as expected, most listings are in general seen in the surrounding neighbourhoods such as Vesterbro-Kongens Enghave, Nørrebro, Fredriksberg and Østerbro. Visiters like to stay close to where the fun happens!
-                  </p>
-                  
+			We see that... 
+			</p>
+                                    <p class="lead">
+			Ok, now that we know where a lot of wines are produced, let us look into the types of grapes the wines are produced of.
+			</p>
                   <div>
-                      <img src="images/Grape_dist_fr.png" width="90%" class="center-image">
+                      <img src="images/Grape_dist_it.png" width="90%" class="center-image">
                   </div>
 			                  <div>
-                      <img src="images/Grape_dist_it.png" width="90%" class="center-image">
+                      <img src="images/Grape_dist_fr.png" width="90%" class="center-image">
+                  </div>
+			
+			<p class="lead">
+			Interesting! We note that Italy has
+			</p>
+			<p class="lead">
+			How about the flavours of the wines?
+			</p>
+			                  <div>
+                      <img src="images/Flavour_dist_it.png" width="90%" class="center-image">
                   </div>
 			                  <div>
                       <img src="images/Flavour_dist_fr.png" width="90%" class="center-image">
                   </div>
-			                  <div>
-                      <img src="images/Flavour_dist_it.png" width="90%" class="center-image">
+                  <p class="lead">
+Should we examine the prices too? That is often an important factor..
+			</p>
+			<div>
+                      <img src="images/price.png" width="90%" class="center-image">
                   </div>
                   <p class="lead">
-                        Many listings are available on the Airbnb market, but the number of renters is also high, and only more comes. Airbnb was founded in ultimo 2008 in California, USA, and has ever since become a more and more succesful business. In Copenhagen the growing number of listings started in 2012 and the illustration below only shows the massiv explosion of the Airbnb trend. More and more listings are seen all around Copenhagen. Click start on the map and check it out!
-                   </p>
+Another important factor is the rating
+			</p>
                   <div>
-                        <object class="ob" data="visualizations/Listings_heatmap.html" width="90%" height="550px"></object>
+                      <img src="images/Rating_dist_it.png" width="90%" class="center-image">
                   </div>
-                  
+			<div>
+                      <img src="images/Rating_dist_fr.png" width="90%" class="center-image">
+                  </div>
                 </div>
             </div>
              <! -- ================================================== -->
-            <hr class="featurette-divider" id="id_when_rent">
+            <hr class="featurette-divider" id="id_networks">
             <div class="row featurette">
               <h2 class="featurette-heading">When to rent out your Housing? </h2>
                 <div class="col-md-12">
@@ -162,13 +176,13 @@ th {
 			  A review is obtained after an end estate rental, and is the same as one or more nights, namely a stay. Eight yearly distributions are visuable, all showing the same tendency. Most people are renting a housing in the summer half of the year, and more and more visiters are seen though the years from 2012 until 2019! The same color combination is used though a year, where the darkest blue illustrates January and the yellow illustrates December.
 		  </p>
                   <div>
-                      <img src="visualizations/Histogram_month_year.png" width="95%" class="center-image">
+                      <img src="images/WC_fr.png" width="95%" class="center-image">
                   </div>
                   <p class="lead">
                         Having a closer look at only a single year, namely 2019, a lot of spikes are seen in the visualization below. Again a small color palette is used, now to illustrate one week. Yellow is now mondays and the darker blue colors illustrate the weekends. Most reviews are defenetly seen sundays to tuesdays. As mentioned, the plot illustates the number of reviews and not the the exact start or end date of a stay. By this reason, the weekly pattern becomes a little skeewed with a few days, having the assumption that most rentings are seen in the weekends. This assumption then still remains true. 
                   </p>
                   <div>
-                      <img src="visualizations/Histogram_days_2019.png" width="95%" class="center-image">
+                      <img src="images/WC_it.png" width="95%" class="center-image">
                   </div>
 		  <p class="lead">
 		      So if you decide to rent out your housing and become a Airbnb host then be prepared every weekend, and especially thoughout the summer. You will probably get a guest or two!
