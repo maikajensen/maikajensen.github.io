@@ -138,3 +138,7 @@ html {
         font-size: 50px;
     }
 }
+
+table {
+    border-collapse: collapse;
+  }
