@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e63a02dc0518411092311e4b4e754b95 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e63a02dc0518411092311e4b4e754b95" ></div>
+        
+</body>
+<script>    
+    
+            var map_e63a02dc0518411092311e4b4e754b95 = L.map(
+                "map_e63a02dc0518411092311e4b4e754b95",
+                {
+                    center: [41.0, 12.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e43f98127d6b488a86bfec6bb3216be7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e63a02dc0518411092311e4b4e754b95);
+        
+    
+            var regular_polygon_marker_c1b488afbb73444084717ee418590ead = new L.RegularPolygonMarker(
+                [40.44850453942858, 17.921717366512194],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_e63a02dc0518411092311e4b4e754b95);
+        
+    
+        var popup_7256127f23b54d08b30dc113e4ee3ea1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a8020e6a2a948a7ba4604ca0a0bc5b5 = $(`<div id="html_4a8020e6a2a948a7ba4604ca0a0bc5b5" style="width: 100.0%; height: 100.0%;">420 wines from the winery San Donaci</div>`)[0];
+            popup_7256127f23b54d08b30dc113e4ee3ea1.setContent(html_4a8020e6a2a948a7ba4604ca0a0bc5b5);
+        
+
+        regular_polygon_marker_c1b488afbb73444084717ee418590ead.bindPopup(popup_7256127f23b54d08b30dc113e4ee3ea1)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_ac8c58f11f9447a081997623dd77bc57 = new L.RegularPolygonMarker(
+                [43.50125245989086, 11.378133682300806],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_e63a02dc0518411092311e4b4e754b95);
+        
+    
+        var popup_cbe2f5c68c1f41c89d34a9e72830b1bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26b0e8a96b56476d888b9a10577e4393 = $(`<div id="html_26b0e8a96b56476d888b9a10577e4393" style="width: 100.0%; height: 100.0%;">203 wines from the winery l'Erta di Radda</div>`)[0];
+            popup_cbe2f5c68c1f41c89d34a9e72830b1bc.setContent(html_26b0e8a96b56476d888b9a10577e4393);
+        
+
+        regular_polygon_marker_ac8c58f11f9447a081997623dd77bc57.bindPopup(popup_cbe2f5c68c1f41c89d34a9e72830b1bc)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_a131dcf5eae74e43b86018e65636398e = new L.RegularPolygonMarker(
+                [45.6437794237273, 11.127714094991783],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_e63a02dc0518411092311e4b4e754b95);
+        
+    
+        var popup_052e7ec9bcf94c8bada916c08e122b42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0c7e9bc09f6464288aad9ba5fab73d8 = $(`<div id="html_b0c7e9bc09f6464288aad9ba5fab73d8" style="width: 100.0%; height: 100.0%;">12 wines from the winery Tommasi</div>`)[0];
+            popup_052e7ec9bcf94c8bada916c08e122b42.setContent(html_b0c7e9bc09f6464288aad9ba5fab73d8);
+        
+
+        regular_polygon_marker_a131dcf5eae74e43b86018e65636398e.bindPopup(popup_052e7ec9bcf94c8bada916c08e122b42)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_465c9e856d2f4fe1826feecbad70ad79 = new L.RegularPolygonMarker(
+                [45.44884272176966, 9.206476868871961],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ffff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_e63a02dc0518411092311e4b4e754b95);
+        
+    
+        var popup_44c09c49fc9c44c5b3c87525620a6b63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23d8e56c49164d5a86d8734c5365be48 = $(`<div id="html_23d8e56c49164d5a86d8734c5365be48" style="width: 100.0%; height: 100.0%;">8 wines from the winery Cusumano</div>`)[0];
+            popup_44c09c49fc9c44c5b3c87525620a6b63.setContent(html_23d8e56c49164d5a86d8734c5365be48);
+        
+
+        regular_polygon_marker_465c9e856d2f4fe1826feecbad70ad79.bindPopup(popup_44c09c49fc9c44c5b3c87525620a6b63)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_056546a9f7a4477581b9c5674de31aba = new L.RegularPolygonMarker(
+                [45.58800085433719, 10.709516927389656],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_e63a02dc0518411092311e4b4e754b95);
+        
+    
+        var popup_2679eff31c3c41d696a78c59ba538ad2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c48fd5013aec4450ad68830df58ef0dc = $(`<div id="html_c48fd5013aec4450ad68830df58ef0dc" style="width: 100.0%; height: 100.0%;">6 wines from the winery Lenotti</div>`)[0];
+            popup_2679eff31c3c41d696a78c59ba538ad2.setContent(html_c48fd5013aec4450ad68830df58ef0dc);
+        
+
+        regular_polygon_marker_056546a9f7a4477581b9c5674de31aba.bindPopup(popup_2679eff31c3c41d696a78c59ba538ad2)
+        ;
+
+        
+    
+</script>
