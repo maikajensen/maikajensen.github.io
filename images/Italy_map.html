@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3be4d69769e149ab9a96b7164c4c3b26 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3be4d69769e149ab9a96b7164c4c3b26" ></div>
+        
+</body>
+<script>    
+    
+            var map_3be4d69769e149ab9a96b7164c4c3b26 = L.map(
+                "map_3be4d69769e149ab9a96b7164c4c3b26",
+                {
+                    center: [41.0, 12.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_44f477723abb4d04afde8e6e3f21e719 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3be4d69769e149ab9a96b7164c4c3b26);
+        
+    
+            var regular_polygon_marker_6d413ce3d82d45ecb1bca69d97270869 = new L.RegularPolygonMarker(
+                [43.77105, 11.24862],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_3be4d69769e149ab9a96b7164c4c3b26);
+        
+    
+        var popup_b757910cd0954b66a8b17fdc31fa8a26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8669f4328e3e410d9004756db7727798 = $(`<div id="html_8669f4328e3e410d9004756db7727798" style="width: 100.0%; height: 100.0%;">Salento / numer of wineries: 428</div>`)[0];
+            popup_b757910cd0954b66a8b17fdc31fa8a26.setContent(html_8669f4328e3e410d9004756db7727798);
+        
+
+        regular_polygon_marker_6d413ce3d82d45ecb1bca69d97270869.bindPopup(popup_b757910cd0954b66a8b17fdc31fa8a26)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_5cb2a1c44d2f4149a3a4ee45bb8c23ce = new L.RegularPolygonMarker(
+                [43.0551, 11.489],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_3be4d69769e149ab9a96b7164c4c3b26);
+        
+    
+        var popup_76589c617c84435fa0ee994910281791 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dca1d093cc7d4150a337bb1ae2e0105a = $(`<div id="html_dca1d093cc7d4150a337bb1ae2e0105a" style="width: 100.0%; height: 100.0%;">Chianti Classico / numer of wineries: 213</div>`)[0];
+            popup_76589c617c84435fa0ee994910281791.setContent(html_dca1d093cc7d4150a337bb1ae2e0105a);
+        
+
+        regular_polygon_marker_5cb2a1c44d2f4149a3a4ee45bb8c23ce.bindPopup(popup_76589c617c84435fa0ee994910281791)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_8385cba2834242589cd1dc05f17da871 = new L.RegularPolygonMarker(
+                [37.59999, 14.01536],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe300", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_3be4d69769e149ab9a96b7164c4c3b26);
+        
+    
+        var popup_a97cb5a3be5249138ddb37b66c1e8bbc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31aef40b87ec4136b52069cd356274cb = $(`<div id="html_31aef40b87ec4136b52069cd356274cb" style="width: 100.0%; height: 100.0%;">Terre Siciliane / numer of wineries: 23</div>`)[0];
+            popup_a97cb5a3be5249138ddb37b66c1e8bbc.setContent(html_31aef40b87ec4136b52069cd356274cb);
+        
+
+        regular_polygon_marker_8385cba2834242589cd1dc05f17da871.bindPopup(popup_a97cb5a3be5249138ddb37b66c1e8bbc)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_b9d9b96ca4f04c42839c685b09e7e79a = new L.RegularPolygonMarker(
+                [44.6088, 7.9403],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aaff00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_3be4d69769e149ab9a96b7164c4c3b26);
+        
+    
+        var popup_021bd78dfc254c308a0e50bea6c4d97a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_853f17b4a2e7487696b374a40cf44a79 = $(`<div id="html_853f17b4a2e7487696b374a40cf44a79" style="width: 100.0%; height: 100.0%;">Puglia / numer of wineries: 19</div>`)[0];
+            popup_021bd78dfc254c308a0e50bea6c4d97a.setContent(html_853f17b4a2e7487696b374a40cf44a79);
+        
+
+        regular_polygon_marker_b9d9b96ca4f04c42839c685b09e7e79a.bindPopup(popup_021bd78dfc254c308a0e50bea6c4d97a)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_3e920b96d7a94bf6a7df83284f6af983 = new L.RegularPolygonMarker(
+                [43.3927, 11.30904],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#39ff00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_3be4d69769e149ab9a96b7164c4c3b26);
+        
+    
+        var popup_a9d1cd19dfd94078a158619b0d5fdd40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea9f195cb37d4442addc31eae66eacbf = $(`<div id="html_ea9f195cb37d4442addc31eae66eacbf" style="width: 100.0%; height: 100.0%;">Valpolicella Ripasso / numer of wineries: 16</div>`)[0];
+            popup_a9d1cd19dfd94078a158619b0d5fdd40.setContent(html_ea9f195cb37d4442addc31eae66eacbf);
+        
+
+        regular_polygon_marker_3e920b96d7a94bf6a7df83284f6af983.bindPopup(popup_a9d1cd19dfd94078a158619b0d5fdd40)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_dc4713403f05448faabb876d10c9a208 = new L.RegularPolygonMarker(
+                [45.5361, 10.83845],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff39", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_3be4d69769e149ab9a96b7164c4c3b26);
+        
+    
+        var popup_ed799149fde0468b8f7d1a1e7e239931 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9562bd8e1b1e4d2dbdd654da92372518 = $(`<div id="html_9562bd8e1b1e4d2dbdd654da92372518" style="width: 100.0%; height: 100.0%;">Veneto / numer of wineries: 15</div>`)[0];
+            popup_ed799149fde0468b8f7d1a1e7e239931.setContent(html_9562bd8e1b1e4d2dbdd654da92372518);
+        
+
+        regular_polygon_marker_dc4713403f05448faabb876d10c9a208.bindPopup(popup_ed799149fde0468b8f7d1a1e7e239931)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_60d9258226cb4edf947fad3e5ea06832 = new L.RegularPolygonMarker(
+                [44.7192, 8.0751],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ffaa", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_3be4d69769e149ab9a96b7164c4c3b26);
+        
+    
+        var popup_08ea7d5f7d894a0a80bb9708a18921ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bd9cce8ab7b4332985b6b17576110a0 = $(`<div id="html_2bd9cce8ab7b4332985b6b17576110a0" style="width: 100.0%; height: 100.0%;">Südtirol - Alto Adige / numer of wineries: 13</div>`)[0];
+            popup_08ea7d5f7d894a0a80bb9708a18921ae.setContent(html_2bd9cce8ab7b4332985b6b17576110a0);
+        
+
+        regular_polygon_marker_60d9258226cb4edf947fad3e5ea06832.bindPopup(popup_08ea7d5f7d894a0a80bb9708a18921ae)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_1f860eb363144655a58e2bace09f9873 = new L.RegularPolygonMarker(
+                [46.7341, 11.2888],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00e3ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_3be4d69769e149ab9a96b7164c4c3b26);
+        
+    
+        var popup_32dca4434a2f4f8bbabce6f9b527eadb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0256a238765b4c82a4333d5b71fff33b = $(`<div id="html_0256a238765b4c82a4333d5b71fff33b" style="width: 100.0%; height: 100.0%;">Valpolicella Classico / numer of wineries: 11</div>`)[0];
+            popup_32dca4434a2f4f8bbabce6f9b527eadb.setContent(html_0256a238765b4c82a4333d5b71fff33b);
+        
+
+        regular_polygon_marker_1f860eb363144655a58e2bace09f9873.bindPopup(popup_32dca4434a2f4f8bbabce6f9b527eadb)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_67867d4bd23746e9b246a727c7fc62c7 = new L.RegularPolygonMarker(
+                [46.22592, 13.10336],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0071ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_3be4d69769e149ab9a96b7164c4c3b26);
+        
+    
+        var popup_3df6b0ea76fa47f6aa1e809d8928cd45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e4c326ea3884a7fb02abac40c678bef = $(`<div id="html_6e4c326ea3884a7fb02abac40c678bef" style="width: 100.0%; height: 100.0%;">Chianti / numer of wineries: 9</div>`)[0];
+            popup_3df6b0ea76fa47f6aa1e809d8928cd45.setContent(html_6e4c326ea3884a7fb02abac40c678bef);
+        
+
+        regular_polygon_marker_67867d4bd23746e9b246a727c7fc62c7.bindPopup(popup_3df6b0ea76fa47f6aa1e809d8928cd45)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_7b9c6aaecc4c4d5c806bca260361152f = new L.RegularPolygonMarker(
+                [45.54653, 10.16516],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 20, "opacity": 1.0, "radius": 8, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_3be4d69769e149ab9a96b7164c4c3b26);
+        
+    
+        var popup_de3f478bf67b4b2e83d5ad1bd001d04f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_753da57bf26f46fab151c9bddb413d6a = $(`<div id="html_753da57bf26f46fab151c9bddb413d6a" style="width: 100.0%; height: 100.0%;">Valpolicella / numer of wineries: 9</div>`)[0];
+            popup_de3f478bf67b4b2e83d5ad1bd001d04f.setContent(html_753da57bf26f46fab151c9bddb413d6a);
+        
+
+        regular_polygon_marker_7b9c6aaecc4c4d5c806bca260361152f.bindPopup(popup_de3f478bf67b4b2e83d5ad1bd001d04f)
+        ;
+
+        
+    
+</script>
