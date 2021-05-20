@@ -1,516 +1,621 @@
 <style>
     td {
-      font-size: 11px
+        font-size: 11px
     }
+
     th {
-      font-size: 13px
+        font-size: 13px
     }
-    </style>
-    
-    <!doctype html>
-    <html lang="en">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="Maika Lindkvist Jensen">
-        <meta name="generator" content="Jekyll v4.1.1">
-        <title>Social Graphs and Interactions 2021</title>
-        <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
-        <!-- Bootstrap core CSS -->
-        <link href="bootstrap.min.css" rel="stylesheet">
-        <style>
-            .bd-placeholder-img {
+</style>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Maika Lindkvist Jensen">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Social Graphs and Interactions 2021</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
-          }
-    
-          @media (min-width: 768px) {
+        }
+
+        @media (min-width: 768px) {
             .bd-placeholder-img-lg {
-              font-size: 3.5rem;
+                font-size: 3.5rem;
             }
-          }
-        </style>
-        <!-- Custom styles for this template -->
-        <link href="carousel.css" rel="stylesheet">
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-        <script src="song_sentiment_line_plot.js"></script>
-    </head>
-    
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#id_data">Data</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#id_introduction" tabindex="-1">Introduction</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#id_networks" tabindex="-1">Networks</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#id_wordclouds" tabindex="-1">Wordclouds</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#id_communities" tabindex="-1">Communities</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#id_sentiment" tabindex="-1">Sentiment</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#id_conclusion" tabindex="-1">Conclusion</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <main role="main">
-            <div class="container">
-                <img src="images/frontpic.jpg" width="100%" class="center-image">
-                <div class="text-block" style="background-color:#ad0707">
-                    <h2 class="featurette-heading" style="font-weight: bold;" size="40">Wine Networks <br> <span 
-                        class="featurette-heading" size="30"> Digging into how wines are connected based on similarities  </span></h2>
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="song_sentiment_line_plot.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#id_data">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#id_introduction" tabindex="-1">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#id_networks" tabindex="-1">Networks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#id_wordclouds" tabindex="-1">Wordclouds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#id_communities" tabindex="-1">Communities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#id_sentiment" tabindex="-1">Sentiment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#id_conclusion" tabindex="-1">Conclusion</a>
+                    </li>
+                </ul>
             </div>
+        </nav>
+    </header>
+    <main role="main">
+        <div class="container">
+            <img src="images/frontpic.jpg" width="100%" class="center-image">
+            <div class="text-block" style="background-color:#ad0707">
+                <h2 class="featurette-heading" style="font-weight: bold;" size="40">Wine Networks <br> <span
+                        class="featurette-heading" size="30"> Digging into how wines are connected based on similarities
+                    </span></h2>
             </div>
+        </div>
         <div class="container marketing pt-5">
             <div class="col-md-12">
                 <p class="lead">
-                    Have you ever tried a wine you really loved and then become hooked on this exact wine, not willing to try
+                    Have you ever tried a wine you really loved and then become hooked on this exact wine, not willing
+                    to try
                     something new? Are your dinner friends no longer impressed?
-                    Look no further! On this website, extensive analyis has been made in order to provide you with deeper
-                    knowledge about wines, their flavours, grapes and similarities – so you can find a wine just as good as your
+                    Look no further! On this website, extensive analyis has been made in order to provide you with
+                    deeper
+                    knowledge about wines, their flavours, grapes and similarities – so you can find a wine just as good
+                    as your
                     go-to wine.</p>
                 <p class="lead">
-                    All analysis is based on data scraped from Vivino.com, the world's largest online wine marketplace, and
-                    contains everything from the wine producer and region, to the most used grapes in the wine and good food
-                    pairings, to user's ratings and average prices. To keep it semi simple and stick to the most importatnt wines,
+                    All analysis is based on data scraped from Vivino.com, the world's largest online wine marketplace,
+                    and
+                    contains everything from the wine producer and region, to the most used grapes in the wine and good
+                    food
+                    pairings, to user's ratings and average prices. To keep it semi simple and stick to the most
+                    importatnt wines,
                     this website focuses on Italian and French
                     wines.
-                                </p>
-             </div>
-        </div>
-    
-            <!-- Marketing messaging and featurettes
-      ================================================== -->
-            <!-- Wrap the rest of the page in another container to center all the content. -->
-            <div class="container">
-                <!-- START THE FEATURETTES -->
-                <hr class="featurette-divider" id="id_introduction">
-                <div class="row featurette">
-                    <div class="col-md-12">
-                        <h2 class="featurette-heading">Back to basics</h2>
-                 <p class="lead">
-                    Starting off, let's have a look at what data we are dealing with. Below, you can see which wineries most of
-                    the wines in are data are from. We have kept it simple and only display the top 5 (besed on wine count)
-                    wineries in Italy and France respecitvely.Hover over the selected areas to view more details!
-                                 </p>
-                                 <h5>Map of Italy and the top 5 wineries </h5>
-
-                
-                        <div>
-                            <object class="ob" data="images/Italy_map_winery.html" width="90%" height="550px"></object>
-                        </div>
-                        <h5>Map of France and the top 5 wineries </h5>
-                        <div>
-                            <object class="ob" data="images/France_map_winery.html" width="90%" height="550px"></object>
-                          </div>
-                          <p class="lead">
-                            We see that the top 5 wineries in Itlay...
-                          </p>
-                          <p class="lead">
-                            Now that we know where a lot of the wines are produced, let's look into the what grapes the wines are made
-                            of.
-                          </p>
-                          <div>
-                            <img src="images/Grape_dist_it.png" width="90%" class="center-image">
-                          </div>
-                          <div>
-                            <img src="images/Grape_dist_fr.png" width="90%" class="center-image">
-                          </div>
-                
-                          <p class="lead">
-                            Interesting! We see that most wines from Italy are made of ..
-                          </p>
-                          <p class="lead">
-                            How about the flavours of the wines?
-                          </p>
-                          <div>
-                            <img src="images/Flavour_dist_it.png" width="90%" class="center-image">
-                          </div>
-                          <div>
-                            <img src="images/Flavour_dist_fr.png" width="90%" class="center-image">
-                          </div>
-                          <p class="lead">
-                            We see that many wines have hints of .. </p>
-                          <p class="lead">
-                            Should we examine the prices too? That is often an important factor in choosing the right wine, right?
-                          </p>
-                          <div>
-                            <img src="images/price.png" width="90%" class="center-image">
-                          </div>
-                          <p class="lead">
-                            Ok, so reasonable.. depending on..
-                          </p>
-                          <p class="lead">
-                            Another important factor is the rating
-                          </p>
-                          <div>
-                            <img src="images/Rating_dist_it.png" width="90%" class="center-image">
-                          </div>
-                          <div>
-                            <img src="images/Rating_dist_fr.png" width="90%" class="center-image">
-                          </div>
-                          <p class="lead">
-                            we see that many wines score...
-                          </p>
-                      
-                      
-                      
-                      
-                      
-                    </div>
-                </div>
-                 <! -- ================================================== -->
-                 <hr class="featurette-divider" id="id_networks">
-                 <div class="row featurette">
-                   <h2 class="featurette-heading">Networks - how are the wines connected? </h2>
-                   <div class="col-md-12">
-                     <p class="lead">
-                       Now to the real content. Below we have ecamined how wines are connected based on their flavours. If a wine
-                       has the same flavor profile as another wine (e.g. both have main flavour black oak..), an edge has been
-                       added
-                       between the nodes (each node being a wine). In order to futher destinguish and categorize the wines, the
-                       nodes have been colored
-                       based on the main grape used to produce the wine.
-                       EXPLAIN HOW HAVE Colored nodes and so on
-                     </p>
-                     <h5>Graph of Italian wines </h5>
-         
-                     <div>
-                       <img src="images/Graph_grapes_it.png" width="95%" class="center-image">
-                     </div>
-                     <p class="lead">
-                       we see that the graph is split in two in which most wines in the left blob .. </p>
-                     <h5>Graph of French wines </h5>
-         
-                     <div>
-                       <img src="images/Graph_grapes_fr.png" width="95%" class="center-image">
-                     </div>
-                     <p class="lead">
-                       we see that the graph ... </p>
-                     <p class="lead">
-                       lets look at the sizes </p>
-                     <table>
-                       <thead>
-                         <tr>
-                           <th></th>
-                           <th>Italy</th>
-                           <th>France</th>
-                         </tr>
-                       </thead>
-                       <tbody>
-                         <tr>
-                           <td>Nodes</td>
-                           <td>329</td>
-                           <td>285</td>
-                         </tr>
-                         <tr>
-                           <td>Edges</td>
-                           <td>26288</td>
-                           <td>21766</td>
-                         </tr>
-                       </tbody>
-                     </table>
-         
-                     <p class="lead">
-                       let's have a look at the degree distribution of the wines </p>
-                     <div>
-                       <img src="images/Degree_dist.png" width="95%" class="center-image">
-                     </div>
-         
-                     <table>
-                       <thead>
-                         <tr>
-                           <th>Wine</th>
-                           <th>Degrees</th>
-                         </tr>
-                       </thead>
-                       <tbody>
-                         <tr>
-                           <td>San Donaci Fulgeo Negroamaro Salento 2016</td>
-                           <td>228</td>
-                         </tr>
-                         <tr>
-                           <td>Boccantino Primitivo - Susumaniello 2020</td>
-                           <td>227</td>
-                         </tr>
-                         <tr>
-                           <td>No Bull Zinfandel 2019</td>
-                           <td>227</td>
-                         </tr>
-                       </tbody>
-                     </table>
-         
-                     <table>
-                       <thead>
-                         <tr>
-                           <th>Wine</th>
-                           <th>Degrees</th>
-                         </tr>
-                       </thead>
-                       <tbody>
-                         <tr>
-                           <td>Maison Barboulot Pinot Noir 2019</td>
-                           <td>209</td>
-                         </tr>
-                         <tr>
-                           <td>Foncalieu Réserve de l’Abbé Côtes du Rhône 2019</td>
-                           <td>209</td>
-                         </tr>
-                         <tr>
-                           <td>Beau-Rivage Rouge 2016</td>
-                           <td>209</td>
-                         </tr>
-                       </tbody>
-                     </table>
-         
-                     <p class="lead">
-                       we see that a lot of wines have degree.. this is why graph is so packed, have a look at the interactive
-                       graph below. zoom in and hover over to see details of neighbors.
-                     </p>
-                     <h5>Interactive graph of Italian wines </h5>
-         
-                     <div>
-                       <object class="ob" data="images/graph_output_it.html" width="90%" height="550px"></object>
-                     </div>
-                     <h5>Interactive graph of French wines </h5>
-         
-                     <div>
-                       <object class="ob" data="images/graph_output_fr.html" width="90%" height="800px"></object>
-                     </div>
-         
-         
-                   </div>
-                 </div>
-
-
-                <! -- ================================================== -->
-                <hr class="featurette-divider" id="id_wordclouds">
-                <div class="row featurette">
-                    <div class="col-md-12">
-                        <h2 class="featurette-heading">Wordclouds </h2>
-                       
-                <p class="lead">
-                    Should we look into what words are used to describe the wines? In the glasses below, you can see the top
-                    description words for
-                    Italian and French wines respectively.</p>
-               
-                    <h5>Itianian wc </h5>
-                    <div>
-                      <img src="images/WC_it.png" width="95%" class="center-image">
-                    </div>
-      
-      
-                    <h5>French wc </h5>
-                    <div>
-                      <img src="images/WC_fr.png" width="95%" class="center-image">
-                    </div>
-                      
-                    <p class="lead">
-                        Notice that Italian wines are mainly described as ...
-                      </p>
-                    </div>
-                </div>
-                <! --  ================================================== -->
-                <hr class="featurette-divider" id="id_communities">
-                <div class="row featurette">
-                  <div class="col-md-12">
-                        <h2 class="featurette-heading"> Exploring similar wines with community detection</h2>
-                        <p class="lead">
-                            Looking into the communities of the graphs...
-                                                </p>
-                                                <h5>Italian communities </h5>
-            
-                        <div>
-                            <img src="images/Graph_it_partitions.png" width="95%" class="center-image">
-                        </div>
-                        <h5>French communities </h5>
-                        <div>
-                            <img src="images/Graph_fr_partitions.png" width="95%" class="center-image">
-                          </div>
-
-                          <p class="lead">
-                            they are both split into 3... lets have a look at the words that are used to describe each community </p>
-                          <h5>italian community wc</h5>
-                
-                          <div>
-                            <img src="images/WC_it_communities.png" width="95%" class="center-image">
-                          </div>
-                          <h5>french community wc</h5>
-                
-                          <div>
-                            <img src="images/WC_fr_communities.png" width="95%" class="center-image">
-                          </div>
-                          <p class="lead">
-                            it is seen that the different communities are described ...
-                
-                          </p>
-    
-                    </div>
-                </div>
-                <! -- ================================================== -->
-                <hr class="featurette-divider" id="id_sentiment">
-                <div class="row featurette">
-                  <div class="col-md-12">
-                   <h2 class="featurette-heading"> Sentiment Analysis</h2>
-                        
-                   <p class="lead">
-                    positive italy
-                  </p>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Region</th>
-                        <th>Number of nodes</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>sentiment?o</td>
-                        <td>0.229</td>
-                      </tr>
-                      <tr>
-                        <td>Emilia-Romagna</td>
-                        <td>0.166</td>
-                      </tr>
-                      <tr>
-                        <td>Langhe</td>
-                        <td>0.156</td>
-                      </tr>
-                    </tbody>
-                  </table>
-      
-                  <p class="lead">
-                    positive france
-                  </p>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Region</th>
-                        <th>sentiment?</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Var</td>
-                        <td>0.24</td>
-                      </tr>
-                      <tr>
-                        <td>Champagne</td>
-                        <td>0.198</td>
-                      </tr>
-                      <tr>
-                        <td>Bordeaux</td>
-                        <td>0.196</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p class="lead">
-                    bla bla
-                  </p>
-                  
-                    
-                </div>
-              </div>
-              
-              <! -- ================================================== -->
-              <hr class="featurette-divider" id="id_conclusion">
-              <div class="row featurette">
-                <div class="col-md-12">
-                 <h2 class="featurette-heading"> Conclusion</h2>
-                      
-                 <p class="lead">
-                  positive italy
                 </p>
-                
-                
-                  
-              </div>
             </div>
-              
-              <!-- ================================================== --> 
-              <hr class="featurette-divider" id="id_data">
-              <section id="mid"> 
-              <div class="row featurette">
-              <!--<div class="row featurette"> -->
-              <div class="container marketing pt-5">
-                  <div class="row">
-                    
-              <!--<div class="anchor" id="id_data"> </div> 
+        </div>
+
+        <!-- Marketing messaging and featurettes
+      ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+        <div class="container">
+            <!-- START THE FEATURETTES -->
+            <hr class="featurette-divider" id="id_introduction">
+            <div class="row featurette">
+                <div class="col-md-12">
+                    <h2 class="featurette-heading">Back to basics</h2>
+                    <p class="lead">
+                        Starting off, let's have a look at what data we are dealing with. Below, you can see which
+                        wineries most of
+                        the wines in are data are from. We have kept it simple and only display the top 5 (besed on wine
+                        count)
+                        wineries in Italy and France respecitvely.Hover over the selected areas to view more details!
+                    </p>
+                    <h5>Map of Italy and the top 5 wineries </h5>
+
+
+                    <div>
+                        <object class="ob" data="images/Italy_map_winery.html" width="90%" height="550px"></object>
+                    </div>
+                    <h5>Map of France and the top 5 wineries </h5>
+                    <div>
+                        <object class="ob" data="images/France_map_winery.html" width="90%" height="550px"></object>
+                    </div>
+                    <p class="lead">
+                        We see that the top 5 wineries in Itlay...
+                    </p>
+                    <p class="lead">
+                        Now that we know where a lot of the wines are produced, let's look into the what grapes the
+                        wines are made
+                        of.
+                    </p>
+                    <div>
+                        <img src="images/Grape_dist_it.png" width="90%" class="center-image">
+                    </div>
+                    <div>
+                        <img src="images/Grape_dist_fr.png" width="90%" class="center-image">
+                    </div>
+
+                    <p class="lead">
+                        Interesting! We see that most wines from Italy are made of ..
+                    </p>
+                    <p class="lead">
+                        How about the flavours of the wines?
+                    </p>
+                    <div>
+                        <img src="images/Flavour_dist_it.png" width="90%" class="center-image">
+                    </div>
+                    <div>
+                        <img src="images/Flavour_dist_fr.png" width="90%" class="center-image">
+                    </div>
+                    <p class="lead">
+                        We see that many wines have hints of .. </p>
+                    <p class="lead">
+                        Should we examine the prices too? That is often an important factor in choosing the right wine,
+                        right?
+                    </p>
+                    <div>
+                        <img src="images/price.png" width="90%" class="center-image">
+                    </div>
+                    <p class="lead">
+                        Ok, so reasonable.. depending on..
+                    </p>
+                    <p class="lead">
+                        Another important factor is the rating
+                    </p>
+                    <div>
+                        <img src="images/Rating_dist_it.png" width="90%" class="center-image">
+                    </div>
+                    <div>
+                        <img src="images/Rating_dist_fr.png" width="90%" class="center-image">
+                    </div>
+                    <p class="lead">
+                        we see that many wines score...
+                    </p>
+
+
+
+
+
+                </div>
+            </div>
+            <! --==================================================-->
+                <hr class="featurette-divider" id="id_networks">
+                <div class="row featurette">
+                    <h2 class="featurette-heading">Networks - how are the wines connected? </h2>
+                    <div class="col-md-12">
+                        <p class="lead">
+                            Now to the real content. Below we have ecamined how wines are connected based on their
+                            flavours. If a wine
+                            has the same flavor profile as another wine (e.g. both have main flavour black oak..), an
+                            edge has been
+                            added
+                            between the nodes (each node being a wine). In order to futher destinguish and categorize
+                            the wines, the
+                            nodes have been colored
+                            based on the main grape used to produce the wine.
+                            EXPLAIN HOW HAVE Colored nodes and so on
+                        </p>
+                        <h5>Graph of Italian wines </h5>
+
+                        <div>
+                            <img src="images/Graph_grapes_it.png" width="95%" class="center-image">
+                        </div>
+                        <p class="lead">
+                            we see that the graph is split in two in which most wines in the left blob .. </p>
+                        <h5>Graph of French wines </h5>
+
+                        <div>
+                            <img src="images/Graph_grapes_fr.png" width="95%" class="center-image">
+                        </div>
+                        <p class="lead">
+                            we see that the graph ... </p>
+                        <p class="lead">
+                            lets look at the sizes </p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Italy</th>
+                                    <th>France</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nodes</td>
+                                    <td>329</td>
+                                    <td>285</td>
+                                </tr>
+                                <tr>
+                                    <td>Edges</td>
+                                    <td>26288</td>
+                                    <td>21766</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p class="lead">
+                            let's have a look at the degree distribution of the wines </p>
+                        <div>
+                            <img src="images/Degree_dist.png" width="95%" class="center-image">
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Wine</th>
+                                    <th>Degrees</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>San Donaci Fulgeo Negroamaro Salento 2016</td>
+                                    <td>228</td>
+                                </tr>
+                                <tr>
+                                    <td>Boccantino Primitivo - Susumaniello 2020</td>
+                                    <td>227</td>
+                                </tr>
+                                <tr>
+                                    <td>No Bull Zinfandel 2019</td>
+                                    <td>227</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Wine</th>
+                                    <th>Degrees</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maison Barboulot Pinot Noir 2019</td>
+                                    <td>209</td>
+                                </tr>
+                                <tr>
+                                    <td>Foncalieu Réserve de l’Abbé Côtes du Rhône 2019</td>
+                                    <td>209</td>
+                                </tr>
+                                <tr>
+                                    <td>Beau-Rivage Rouge 2016</td>
+                                    <td>209</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p class="lead">
+                            we see that a lot of wines have degree.. this is why graph is so packed, have a look at the
+                            interactive
+                            graph below. zoom in and hover over to see details of neighbors.
+                        </p>
+                        <h5>Interactive graph of Italian wines </h5>
+
+                        <div>
+                            <object class="ob" data="images/graph_output_it.html" width="90%" height="550px"></object>
+                        </div>
+                        <h5>Interactive graph of French wines </h5>
+
+                        <div>
+                            <object class="ob" data="images/graph_output_fr.html" width="90%" height="800px"></object>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <! --==================================================-->
+                    <hr class="featurette-divider" id="id_wordclouds">
+                    <div class="row featurette">
+                        <div class="col-md-12">
+                            <h2 class="featurette-heading">Wordclouds </h2>
+
+                            <p class="lead">
+                                Should we look into what words are used to describe the wines? In the glasses below, you
+                                can see the top
+                                description words for
+                                Italian and French wines respectively.</p>
+
+                            <h5>Itianian wc </h5>
+                            <div>
+                                <img src="images/WC_it.png" width="95%" class="center-image">
+                            </div>
+
+
+                            <h5>French wc </h5>
+                            <div>
+                                <img src="images/WC_fr.png" width="95%" class="center-image">
+                            </div>
+
+                            <p class="lead">
+                                Notice that Italian wines are mainly described as ...
+                            </p>
+                        </div>
+                    </div>
+                    <! --==================================================-->
+                        <hr class="featurette-divider" id="id_communities">
+                        <div class="row featurette">
+                            <div class="col-md-12">
+                                <h2 class="featurette-heading"> Exploring similar wines with community detection</h2>
+                                <p class="lead">
+                                    Looking into the communities of the graphs...
+                                </p>
+                                <h5>Italian communities </h5>
+
+                                <div>
+                                    <img src="images/Graph_it_partitions.png" width="95%" class="center-image">
+                                </div>
+                                <h5>French communities </h5>
+                                <div>
+                                    <img src="images/Graph_fr_partitions.png" width="95%" class="center-image">
+                                </div>
+
+                                <p class="lead">
+                                    they are both split into 3... lets have a look at the words that are used to
+                                    describe each community </p>
+                                <h5>italian community wc</h5>
+
+                                <div>
+                                    <img src="images/WC_it_communities.png" width="95%" class="center-image">
+                                </div>
+                                <h5>french community wc</h5>
+
+                                <div>
+                                    <img src="images/WC_fr_communities.png" width="95%" class="center-image">
+                                </div>
+                                <p class="lead">
+                                    it is seen that the different communities are described ...
+
+                                </p>
+
+                            </div>
+                        </div>
+                        <! --==================================================-->
+                            <hr class="featurette-divider" id="id_sentiment">
+                            <div class="row featurette">
+                                <div class="col-md-12">
+                                    <h2 class="featurette-heading"> Sentiment Analysis</h2>
+
+                                    <p class="lead">
+                                        positive italy
+                                    </p>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Region</th>
+                                                <th>Number of nodes</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>sentiment?o</td>
+                                                <td>0.229</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Emilia-Romagna</td>
+                                                <td>0.166</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Langhe</td>
+                                                <td>0.156</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p class="lead">
+                                        positive france
+                                    </p>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Region</th>
+                                                <th>sentiment?</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Var</td>
+                                                <td>0.24</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Champagne</td>
+                                                <td>0.198</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bordeaux</td>
+                                                <td>0.196</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="lead">
+                                        bla bla
+                                    </p>
+
+
+                                </div>
+                            </div>
+
+                            <!-- ================================================== -->
+                            <hr class="featurette-divider" id="id_sentiment_test">
+                            <section id="mid">
+                                <div class="row featurette">
+                                    <!--<div class="row featurette"> -->
+                                    <div class="container marketing pt-5">
+                                        <div class="row">
+
+                                            <!--<div class="anchor" id="id_data"> </div> 
+<div class="container marketing pt-5"> -->
+
+                                            <!-- Three columns of text below the carousel -->
+                                            <div class="col-lg-2">
+
+                                            </div><!-- /.col-lg-2 -->
+                                            <div class="col-lg-4">
+                                                <h2>tab2</h2>
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Region</th>
+                                                            <th>sentiment?</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Var</td>
+                                                            <td>0.24</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Champagne</td>
+                                                            <td>0.198</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bordeaux</td>
+                                                            <td>0.196</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div><!-- /.col-lg-4 -->
+                                            
+                                            <div class="col-lg-4">
+                                                
+                                                <h2>tab 1</h2>
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Region</th>
+                                                            <th>sentiment?</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Var</td>
+                                                            <td>0.24</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Champagne</td>
+                                                            <td>0.198</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bordeaux</td>
+                                                            <td>0.196</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div><!-- /.col-lg-4 -->
+                                            
+                                            <div class="col-lg-2">
+
+                                            </div><!-- /.col-lg-2 -->
+                                        </div><!-- /.row -->
+                                    </div>
+
+
+                                    <hr class="featurette-divider">
+                                    <!-- /END THE FEATURETTES -->
+                                </div><!-- /.container -->
+                            </section>
+
+                            <! --==================================================-->
+                                <hr class="featurette-divider" id="id_conclusion">
+                                <div class="row featurette">
+                                    <div class="col-md-12">
+                                        <h2 class="featurette-heading"> Conclusion</h2>
+
+                                        <p class="lead">
+                                            positive italy
+                                        </p>
+
+
+
+                                    </div>
+                                </div>
+
+                                <!-- ================================================== -->
+                                <hr class="featurette-divider" id="id_data">
+                                <section id="mid">
+                                    <div class="row featurette">
+                                        <!--<div class="row featurette"> -->
+                                        <div class="container marketing pt-5">
+                                            <div class="row">
+
+                                                <!--<div class="anchor" id="id_data"> </div> 
               <div class="container marketing pt-5"> -->
-                
-                <!-- Three columns of text below the carousel -->
-                <div class="col-lg-2">
-                
-                 </div><!-- /.col-lg-2 -->
-                     <div class="col-lg-4">
-                        <img src="images/vivino_logo.png" width="60%">
-    <!--                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+
+                                                <!-- Three columns of text below the carousel -->
+                                                <div class="col-lg-2">
+
+                                                </div><!-- /.col-lg-2 -->
+                                                <div class="col-lg-4">
+                                                    <img src="images/vivino_logo.png" width="60%">
+                                                    <!--                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
                             <title>Placeholder</title>
                             <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
                             </svg> -->
-                        <h2>Data from Vivino</h2>
-    <!--                    <p>Placeholder.</p> -->
-                        <p><a class="btn btn-secondary" href="data/listings.zip" role="button">Load Listings &raquo;</a></p>
-                        <p><a class="btn btn-secondary" href="data/reviews.zip" role="button">Load Reviews &raquo;</a></p>
-                     </div><!-- /.col-lg-4 -->
-                     <div class="col-lg-4">
-                        <img src="visualizations/deepnote.png" width="66.5%">
-                        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="https://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                                                    <h2>Data from Vivino</h2>
+                                                    <!--                    <p>Placeholder.</p> -->
+                                                    <p><a class="btn btn-secondary" href="data/listings.zip"
+                                                            role="button">Load Listings &raquo;</a></p>
+                                                    <p><a class="btn btn-secondary" href="data/reviews.zip"
+                                                            role="button">Load Reviews &raquo;</a></p>
+                                                </div><!-- /.col-lg-4 -->
+                                                <div class="col-lg-4">
+                                                    <img src="visualizations/deepnote.png" width="66.5%">
+                                                    <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="https://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
                             <title>Placeholder</title>
                             <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
                         </svg> -->
-                        <h2>Explainer Notebook</h2>
-                        <p><a class="btn btn-secondary" href="https://deepnote.com/@thina-thgersen/Social-Data-2021-Publishing-vkvdLxOITAKuV05Z1LUJdQ#" role="button">View Notebook &raquo;</a></p>
-                     </div><!-- /.col-lg-4 -->
-              <div class="col-lg-2">
-                
-                     </div><!-- /.col-lg-2 -->
-                    </div><!-- /.row -->
-                </div>
-                
-               
-                <hr class="featurette-divider">
-                <!-- /END THE FEATURETTES -->
-            </div><!-- /.container -->
-            </section>
-           
-              
-            <!-- FOOTER -->
-            <footer class="container">
-                <p class="float-right"><a href="#">Back to top</a></p>
-                <p>Maika Lindkvist Jensen (s164192) <br> 02.. Social DaGraphs and Interactions <br> Technical University of Denmark <br> May 2021</p>
-            </footer>
-        </main>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>  
-      <script>
+                                                    <h2>Explainer Notebook</h2>
+                                                    <p><a class="btn btn-secondary"
+                                                            href="https://deepnote.com/@thina-thgersen/Social-Data-2021-Publishing-vkvdLxOITAKuV05Z1LUJdQ#"
+                                                            role="button">View Notebook &raquo;</a></p>
+                                                </div><!-- /.col-lg-4 -->
+                                                <div class="col-lg-2">
+
+                                                </div><!-- /.col-lg-2 -->
+                                            </div><!-- /.row -->
+                                        </div>
+
+
+                                        <hr class="featurette-divider">
+                                        <!-- /END THE FEATURETTES -->
+                                    </div><!-- /.container -->
+                                </section>
+
+
+                                <!-- FOOTER -->
+                                <footer class="container">
+                                    <p class="float-right"><a href="#">Back to top</a></p>
+                                    <p>Maika Lindkvist Jensen (s164192) <br> 02.. Social DaGraphs and Interactions <br>
+                                        Technical University of Denmark <br> May 2021</p>
+                                </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
         window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
-        </script>
-        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-    
-    </html>
+    </script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
