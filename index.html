@@ -84,7 +84,7 @@
   <main role="main">
     <div class="container">
       <img src="images/frontpic.jpg" width="100%" class="center-image">
-      <div class="text-block" style="background-color:#C41C1C">
+      <div class="text-block" style="background-color:#ad0707">
         <h2 class="featurette-heading" style="font-weight: bold;" size="40">Wine Networks <br> <span
             class="featurette-heading" size="30"> Digging into how wines are connected based on similarities </span>
         </h2>
@@ -102,8 +102,9 @@
         <p class="lead">
           All analysis is based on data scraped from Vivino.com, the world's largest online wine marketplace, and
           contains everything from the wine producer and region, to the most used grapes in the wine and good food
-          pairings, to user's ratings and average prices. Do note that this website only looks into Italian and French
-          wines, just so we do not get to excited and overwhelmed.
+          pairings, to user's ratings and average prices. To keep it semi simple and stick to the most importatnt wines,
+          this website focuses on Italian and French
+          wines.
         </p>
       </div>
     </div>
@@ -116,29 +117,29 @@
       <hr class="featurette-divider" id="id_introduction">
       <div class="row featurette">
         <div class="col-md-12">
-          <h2 class="featurette-heading">Let's start with the basics </h2>
+          <h2 class="featurette-heading">Back to basics </h2>
           <p class="lead">
-            Let us have a look at what data we are dealing with.
+            Starting off, let's have a look at what data we are dealing with. Below, you can see which wineries most of
+            the wines in are data are from. We have kept it simple and only display the top 5 (besed on wine count)
+            wineries in Italy and France respecitvely.Hover over the selected areas to view more details!
           </p>
-          <p class="lead">
-            First of all, lets see where most of the wines are from. In the maps below, we see the wineries in which
-            most wines are from in respectively Italy and France. Hover over the map to see more details!
-          </p>
+          <h5 class="featurette-heading">Map of Italy and the wineries in which most wines are from. </h5>
 
           <div>
             <object class="ob" data="images/Italy_map_winery.html" width="90%" height="550px"></object>
           </div>
+          <h5 class="featurette-heading">Map of France and the wineries in which most wines are from </h5>
 
           <div>
             <object class="ob" data="images/France_map_winery.html" width="90%" height="550px"></object>
           </div>
 
           <p class="lead">
-            We see that...
+            We see that the top 5 wineries in Itlay...
           </p>
           <p class="lead">
-            Ok, now that we know where a lot of wines are produced, let us look into the types of grapes the wines are
-            produced of.
+            Now that we know where a lot of the wines are produced, let's look into the what grapes the wines are made
+            of.
           </p>
           <div>
             <img src="images/Grape_dist_it.png" width="90%" class="center-image">
@@ -148,7 +149,7 @@
           </div>
 
           <p class="lead">
-            Interesting! We note that Italy has
+            Interesting! We see that most wines from Italy are made of ..
           </p>
           <p class="lead">
             How about the flavours of the wines?
@@ -160,11 +161,16 @@
             <img src="images/Flavour_dist_fr.png" width="90%" class="center-image">
           </div>
           <p class="lead">
-            Should we examine the prices too? That is often an important factor..
+            We see that many wines have hints of .. </p>
+          <p class="lead">
+            Should we examine the prices too? That is often an important factor in choosing the right wine, right?
           </p>
           <div>
             <img src="images/price.png" width="90%" class="center-image">
           </div>
+          <p class="lead">
+            Ok, so reasonable.. depending on..
+          </p>
           <p class="lead">
             Another important factor is the rating
           </p>
@@ -174,6 +180,9 @@
           <div>
             <img src="images/Rating_dist_fr.png" width="90%" class="center-image">
           </div>
+          <p class="lead">
+            we see that many wines score...
+          </p>
         </div>
       </div>
       <! --==================================================-->
@@ -182,24 +191,43 @@
           <h2 class="featurette-heading">Networks - how are the wines connected? </h2>
           <div class="col-md-12">
             <p class="lead">
-              Now to the real content, ..
+              Now to the real content. Below we have ecamined how wines are connected based on their flavours. If a wine
+              has the same flavor profile as another wine (e.g. both have main flavour black oak..), an edge has been added 
+              between the nodes (each node being a wine). In order to futher destinguish and categorize the wines, the nodes have been colored 
+              based on the main grape used to produce the wine. 
               EXPLAIN HOW HAVE Colored nodes and so on
             </p>
+            <h5 class="featurette-heading">Graph of Italian wines </h5>
 
             <div>
               <img src="images/Graph_grapes_it.png" width="95%" class="center-image">
             </div>
             <p class="lead">
-              we see that the graph is split in two. </p>
+              we see that the graph is split in two in which most wines in the left blob .. </p>
+              <h5 class="featurette-heading">Graph of French wines </h5>
+
             <div>
               <img src="images/Graph_grapes_fr.png" width="95%" class="center-image">
             </div>
+            <p class="lead">
+              we see that the graph ... </p>
+              <p class="lead">
+                let's have a look at the degree distribution of the wines  </p>
             <div>
               <img src="images/Degree_dist.png" width="95%" class="center-image">
             </div>
-            
+
             <p class="lead">
-              the french wine network.. </p>
+              the french wine network.. ONLY USE INTERACTIVE? </p>
+
+            <div>
+              <object class="ob" data="images/graph_output_it.html" width="90%" height="550px"></object>
+            </div>
+            <p class="lead">
+              bla </p>
+            <div>
+              <object class="ob" data="images/graph_output_fr.html" width="90%" height="550px"></object>
+            </div>
 
 
           </div>
@@ -240,10 +268,10 @@
                   prices are 'per night' and in DKK. First an overview of all listing prices!
                 </p>
                 <div>
-                  <img src="images/Graph_it_partition.png" width="95%" class="center-image">
+                  <img src="images/Graph_it_partitions.png" width="95%" class="center-image">
                 </div>
                 <div>
-                  <img src="images/Graph_fr_partition.png" width="95%" class="center-image">
+                  <img src="images/Graph_fr_partitions.png" width="95%" class="center-image">
                 </div>
                 <p class="lead">
                   lets see the wordclouds
@@ -296,39 +324,40 @@
                         <td>0.156</td>
                       </tr>
                     </tbody>
-                    </table>
+                  </table>
 
-                    <p class="lead">
-                      positive france
-                    </p>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>Region</th>
-                          <th>sentiment?</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Var</td>
-                          <td>0.24</td>
-                        </tr>
-                        <tr>
-                          <td>Champagne</td>
-                          <td>0.198/td>
-                        </tr>
-                        <tr>
-                          <td>Bordeaux</td>
-                          <td>0.196</td>
-                        </tr>
-                      </tbody>
-                      </table>
                   <p class="lead">
-                    Try fill out fvddthe specifications of your housing and predict the price you can take per night! Good
+                    positive france
+                  </p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Region</th>
+                        <th>sentiment?</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Var</td>
+                        <td>0.24</td>
+                      </tr>
+                      <tr>
+                        <td>Champagne</td>
+                        <td>0.198</td>
+                      </tr>
+                      <tr>
+                        <td>Bordeaux</td>
+                        <td>0.196</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="lead">
+                    Try fill out fvddthe specifications of your housing and predict the price you can take per night!
+                    Good
                     luck!fdf
                   </p>
 
-                  
+
                   <table>
                     <thead>
                       <tr>
@@ -350,7 +379,7 @@
                         <td>227</td>
                       </tr>
                     </tbody>
-                    </table>
+                  </table>
 
                 </div>
 
