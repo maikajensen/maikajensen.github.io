@@ -95,7 +95,7 @@
             <img src="images/frontpic.jpg" width="100%" class="center-image">
             <div class="text-block" style="background-color:#ad0707">
                 <h2 class="featurette-heading" style="font-weight: bold;" size="40">Wine Networks <br> <span
-                        class="featurette-heading" size="30"> Digging into how wines are connected based on similarities
+                        class="featurette-heading" size="30"> How wines are connected based on similarities
                     </span></h2>
             </div>
         </div>
@@ -153,6 +153,9 @@
                         <object class="ob" data="images/France_map_winery.html" width="90%" height="550px"></object>
                     </div>
                     <p class="lead">
+                       
+                    </p>
+                    <p class="lead">
                         We see that 3 of the top 5 wineries in Itlay are located in norhtern Italy. 
                         I wonder if wines from these regions are more tasty. Interestingly enough, 4 of the 5 top wineries in France 
                         are located in southern France, though at the same latitude as the 3 in norhtern Italy, 
@@ -195,34 +198,9 @@
 
 
                         
-                                            
+                                
                                         
-                                            <table>
-                                                <thead>
-                                                  <tr>
-                                                    <th></th>
-                                                    <th>Italy</th>
-                                                    <th>France</th>
-                                                  </tr>
-                                                </thead>
-                                                <tbody>
-                                                  <tr>
-                                                    <td>Min</td>
-                                                    <td>47</td>
-                                                    <td>49</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>Mean</td>
-                                                    <td>140</td>
-                                                    <td>142</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>Max</td>
-                                                    <td>149</td>
-                                                    <td>149</td>
-                                                  </tr>
-                                                </tbody>
-                                                </table>
+                
 
                                                 <div>
                                                     <img src="images/price.png" width="100%" class="center-image">
@@ -231,7 +209,7 @@
 
                     <p class="lead">
                         It should be noted that only the 500 first pages of Vivino's wine explorer website were scraped, 
-                        and that the ordering was based on price. Therefore (as can be seen in the plot and table above), the maximum
+                        and that the ordering was based on price. Therefore (as can be seen in the plot above), the maximum
                         price is 149 for both countries, and the mean is almost up there as well, meaning the scraping of 500 pages 
                         only reached an upper limit of 149DKK, and that a lot of wines are listed at this price. 
                     </p>
@@ -247,7 +225,7 @@
                         <img src="images/Rating_dist_fr.png" width="90%" class="center-image">
                     </div>
                     <p class="lead">
-                        It seems all wines are average, lying between 3.2-4.5 for Italian wines and 3.1-4.3 for French wines.
+                        It seems all wines are a little above average, lying between 3.2-4.5 for Italian wines and 3.1-4.3 for French wines.
                         People rate a lot of Italian wines 4.1, and 3.7 is also common. For french wines, common ratings are 3.6, 3.8, 3.9 and 4.1. All 
                         in all pretty impressive for wines below 150DKK!
                     </p>
@@ -295,39 +273,13 @@
                             The graph of French wines cannot be spit as easily, however a clear group consisting mainly of Syrah 
                         and Cabernet Sauvignon is seen in the upper left corner. More on groupings later!   </p>
                         <p class="lead">
-                            In the table below, we see the sizes of above networks. Both of them contain more than 20 000 edges (connections between
-                        the wines) though only containing around 300 nodes (wines)!</p>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Italy</th>
-                                    <th>France</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Nodes</td>
-                                    <td>329</td>
-                                    <td>285</td>
-                                </tr>
-                                <tr>
-                                    <td>Edges</td>
-                                    <td>26288</td>
-                                    <td>21766</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <p class="lead">
-                            How about the degree distributions of the wines? </p>
+                            Both the networks contain more than 20 000 edges (connections between
+                        the wines) though only containing around 300 nodes (wines) each! How about the degree distributions?</p>
+                        
                         <div>
                             <img src="images/Degree_dist.png" width="95%" class="center-image">
                         </div>
                        
-
-
-
 
 
                         <section id="mid">
@@ -420,17 +372,23 @@
 
                         <p class="lead">
                             The degree corresponds to how many wines each wine is connected to. 
-                            For both Italy and France
+                            For both Italy and France, there is a large spread. Italy's degree distribution contains
+                            a lot of peaks, meaning many wines have the same degree. A lot of French wines are connected to 
+                            around 180 other wines. The high degrees and number of edges, make a messy plot below, but if you spot 
+                            a wine you like, hover over its' node to see a list of its neighbors (similar tasting wines). You can zoom and 
+                            move the graph around as well! 
 
-                            we see that a lot of wines have degree.. this is why graph is so packed, have a look at the
-                            interactive
-                            graph below. zoom in and hover over to see details of neighbors.
+            
                         </p>
                         <h5>Interactive graph of Italian wines </h5>
 
                         <div>
                             <object class="ob" data="images/graph_output_it.html" width="90%" height="550px"></object>
                         </div>
+                        <p class="lead">
+                        
+            
+                        </p>
                         <h5>Interactive graph of French wines </h5>
 
                         <div>
@@ -450,13 +408,58 @@
 
                             <p class="lead">
                                 Should we look into what words are used to describe the wines? In the glasses below, you
-                                can see the top
-                                description words for
-                                Italian and French wines respectively.</p>
+                                can see the words most commonly used to describe the wines. </p>
 
-                            <h5>Itianian wc </h5>
+
+
+
+
+                                <section id="mid">
+                                    <div class="row featurette">
+                                        <!--<div class="row featurette"> -->
+                                        <div class="container marketing pt-5">
+                                            <div class="row">
+        
+                                                <!--<div class="anchor" id="id_data"> </div> 
+        <div class="container marketing pt-5"> -->
+        
+                                                <!-- Three columns of text below the carousel -->
+                                                <div class="col-lg-2">
+        
+                                                </div><!-- /.col-lg-2 -->
+                                                <div class="col-lg-4">
+                                                    <div>
+                                                        <img src="images/WC_it.png" width="80%" class="center-image">
+                                                    </div>
+                                                </div><!-- /.col-lg-4 -->
+                                                
+                                                <div class="col-lg-4">
+                                                    
+                                                    <div>
+                                                        <img src="images/WC_fr.png" width="95%" class="center-image">
+                                                    </div>
+                                
+                                                </div><!-- /.col-lg-4 -->
+                                                
+                                                <div class="col-lg-2">
+        
+                                                </div><!-- /.col-lg-2 -->
+                                            </div><!-- /.row -->
+                                        </div>
+        
+        
+                                        <hr class="featurette-divider">
+                                        <!-- /END THE FEATURETTES -->
+                                    </div><!-- /.container -->
+                                </section>
+
+
+
+
+
+                            <h5>Italian wordcloud </h5>
                             <div>
-                                <img src="images/WC_it.png" width="95%" class="center-image">
+                                <img src="images/WC_it.png" width="40%" class="center-image">
                             </div>
 
 
