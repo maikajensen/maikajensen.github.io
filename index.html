@@ -194,26 +194,9 @@
                 
 
 
-                        <section id="mid">
-                            <div class="row featurette">
-                                <!--<div class="row featurette"> -->
-                                <div class="container marketing pt-5">
-                                    <div class="row">
-
-                                        <!--<div class="anchor" id="id_data"> </div> 
-<div class="container marketing pt-5"> -->
-
-                                        <!-- Three columns of text below the carousel -->
-                                       
-                                        <div class="col-lg-4">
-                                            <div>
-                                                <img src="images/price.png" width="100%" class="center-image">
-                                            </div>
-                                        </div><!-- /.col-lg-4 -->
+                        
+                                            
                                         
-                                        <div class="col-lg-4">
-                                            
-                                            
                                             <table>
                                                 <thead>
                                                   <tr>
@@ -240,17 +223,10 @@
                                                   </tr>
                                                 </tbody>
                                                 </table>
-                                        </div><!-- /.col-lg-4 -->
-                                        
-                                        
-                                    </div><!-- /.row -->
-                                </div>
 
-
-                                <hr class="featurette-divider">
-                                <!-- /END THE FEATURETTES -->
-                            </div><!-- /.container -->
-                        </section>
+                                                <div>
+                                                    <img src="images/price.png" width="100%" class="center-image">
+                                                </div>
 
 
                     <p class="lead">
@@ -260,7 +236,9 @@
                         only reached an upper limit of 149DKK, and that a lot of wines are listed at this price. 
                     </p>
                     <p class="lead">
-                        Another important factor is the rating
+                        Another important factor is the rating of the wines, that is how many points
+                        on average (0-5), other users have given the wine. Have a look.
+                
                     </p>
                     <div>
                         <img src="images/Rating_dist_it.png" width="90%" class="center-image">
@@ -269,7 +247,9 @@
                         <img src="images/Rating_dist_fr.png" width="90%" class="center-image">
                     </div>
                     <p class="lead">
-                        we see that many wines score...
+                        It seems all wines are average, lying between 3.2-4.5 for Italian wines and 3.1-4.3 for French wines.
+                        People rate a lot of Italian wines 4.1, and 3.7 is also common. For french wines, common ratings are 3.6, 3.8, 3.9 and 4.1. All 
+                        in all pretty impressive for wines below 150DKK!
                     </p>
 
 
@@ -284,16 +264,17 @@
                     <h2 class="featurette-heading">Networks - how are the wines connected? </h2>
                     <div class="col-md-12">
                         <p class="lead">
-                            Now to the real content. Below we have ecamined how wines are connected based on their
+                            Moving on to what we all came for, how the wines are connected based on similarities. 
+                            Below we have examined how wines are connected based on their
                             flavours. If a wine
-                            has the same flavor profile as another wine (e.g. both have main flavour black oak..), an
+                            has the same flavor profile as another wine (e.g. both have main flavour oak), an
                             edge has been
                             added
                             between the nodes (each node being a wine). In order to futher destinguish and categorize
                             the wines, the
                             nodes have been colored
-                            based on the main grape used to produce the wine.
-                            EXPLAIN HOW HAVE Colored nodes and so on
+                            based on the main grape used to produce the wine. An edge is given the color of its' nodes' grape if
+                            the two nodes (wines) the edge connects, are produced from the same grape.
                         </p>
                         <h5>Graph of Italian wines </h5>
 
@@ -301,16 +282,21 @@
                             <img src="images/Graph_grapes_it.png" width="95%" class="center-image">
                         </div>
                         <p class="lead">
-                            we see that the graph is split in two in which most wines in the left blob .. </p>
+                            It seems the graph is split into two main groups, one mainly consisting of wines produced from 
+                        Malvasia, Arneis and Trebbiano, and the other mainly consisting of all other wines. Therefore, it makes sense 
+                        that the links between the two groups are not any connecting the same grapes. 
+                        </p>
                         <h5>Graph of French wines </h5>
 
                         <div>
                             <img src="images/Graph_grapes_fr.png" width="95%" class="center-image">
                         </div>
                         <p class="lead">
-                            we see that the graph ... </p>
+                            The graph of French wines cannot be spit as easily, however a clear group consisting mainly of Syrah 
+                        and Cabernet Sauvignon is seen in the upper left corner. More on groupings later!   </p>
                         <p class="lead">
-                            lets look at the sizes </p>
+                            In the table below, we see the sizes of above networks. Both of them contain more than 20 000 edges (connections between
+                        the wines) though only containing around 300 nodes (wines)!</p>
                         <table>
                             <thead>
                                 <tr>
@@ -334,11 +320,11 @@
                         </table>
 
                         <p class="lead">
-                            let's have a look at the degree distribution of the wines </p>
+                            How about the degree distributions of the wines? </p>
                         <div>
                             <img src="images/Degree_dist.png" width="95%" class="center-image">
                         </div>
-
+                       
 
 
 
@@ -359,6 +345,8 @@
                                         </div><!-- /.col-lg-2 -->
                                         <div class="col-lg-4">
                                             <table>
+                                                <caption style="caption-side:bottom" style= "text-align:center">Italian wines with highest degree</caption>
+
                                                 <thead>
                                                     <tr>
                                                         <th>Wine</th>
@@ -386,6 +374,8 @@
                                             
                                             
                         <table>
+                            <caption style="caption-side:bottom" style= "text-align:center">French wines with highest degree</caption>
+
                             <thead>
                                 <tr>
                                     <th>Wine</th>
@@ -429,6 +419,9 @@
 
 
                         <p class="lead">
+                            The degree corresponds to how many wines each wine is connected to. 
+                            For both Italy and France
+
                             we see that a lot of wines have degree.. this is why graph is so packed, have a look at the
                             interactive
                             graph below. zoom in and hover over to see details of neighbors.
