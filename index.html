@@ -64,9 +64,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#id_data">Data</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#id_introduction" tabindex="-1">Introduction</a>
                     </li>
@@ -84,6 +82,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#id_conclusion" tabindex="-1">Conclusion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#id_data">Data</a>
                     </li>
                 </ul>
             </div>
@@ -136,7 +137,7 @@
                         wineries most of
                         the wines in are data are from. We have kept it simple and only display the top 5 (besed on wine
                         count)
-                        wineries in Italy and France respecitvely.Hover over the selected areas to view more details!
+                        wineries in Italy and France respecitvely. Hover over the selected areas to view more details!
                     </p>
                     <h5>Map of Italy and the top 5 wineries </h5>
 
@@ -144,15 +145,22 @@
                     <div>
                         <object class="ob" data="images/Italy_map_winery.html" width="90%" height="550px"></object>
                     </div>
+                    <p class="lead">
+                       
+                    </p>
                     <h5>Map of France and the top 5 wineries </h5>
                     <div>
                         <object class="ob" data="images/France_map_winery.html" width="90%" height="550px"></object>
                     </div>
                     <p class="lead">
-                        We see that the top 5 wineries in Itlay...
+                        We see that 3 of the top 5 wineries in Itlay are located in norhtern Italy. 
+                        I wonder if wines from these regions are more tasty. Interestingly enough, 4 of the 5 top wineries in France 
+                        are located in southern France, though at the same latitude as the 3 in norhtern Italy, 
+                        maybe the climate is just perfect around this latitude?
+
                     </p>
                     <p class="lead">
-                        Now that we know where a lot of the wines are produced, let's look into the what grapes the
+                        Now that we know where a lot of the wines are produced, let's look into the which grapes the
                         wines are made
                         of.
                     </p>
@@ -164,10 +172,11 @@
                     </div>
 
                     <p class="lead">
-                        Interesting! We see that most wines from Italy are made of ..
+                        Interesting! We see that most wines from Italy are made of Primitivo while an overwhelming amount of French wines
+                        are Syrah. Both countries produce Cabernet Sauvignon, however it is more prominent in France. 
                     </p>
                     <p class="lead">
-                        How about the flavours of the wines?
+                        How about the wine flavours? 
                     </p>
                     <div>
                         <img src="images/Flavour_dist_it.png" width="90%" class="center-image">
@@ -176,14 +185,83 @@
                         <img src="images/Flavour_dist_fr.png" width="90%" class="center-image">
                     </div>
                     <p class="lead">
-                        We see that many wines have hints of .. </p>
+                        We see that Italian wines are governed by oaky notes and French wines are more mixed between the flavours 
+                    black fruit, citrus fruit, earth and microbio. </p>
                     <p class="lead">
-                        Should we examine the prices too? That is often an important factor in choosing the right wine,
+                        Should we examine the prices too? That is often an important factor when choosing the best wine,
                         right?
                     </p>
-                    <div>
-                        <img src="images/price.png" width="90%" class="center-image">
-                    </div>
+                    
+
+                   
+
+
+                        <section id="mid">
+                            <div class="row featurette">
+                                <!--<div class="row featurette"> -->
+                                <div class="container marketing pt-5">
+                                    <div class="row">
+
+                                        <!--<div class="anchor" id="id_data"> </div> 
+<div class="container marketing pt-5"> -->
+
+                                        <!-- Three columns of text below the carousel -->
+                                        <div class="col-lg-2">
+
+                                        </div><!-- /.col-lg-2 -->
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <img src="images/price.png" width="90%" class="center-image">
+                                            </div>
+                                        </div><!-- /.col-lg-4 -->
+                                        
+                                        <div class="col-lg-4">
+                                            
+                                            
+                                            <table>
+                                                <thead>
+                                                  <tr>
+                                                    <th></th>
+                                                    <th>Italy</th>
+                                                    <th>France</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>Min</td>
+                                                    <td>47</td>
+                                                    <td>49</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mean</td>
+                                                    <td>140</td>
+                                                    <td>142</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Max</td>
+                                                    <td>149</td>
+                                                    <td>149</td>
+                                                  </tr>
+                                                </tbody>
+                                                </table>
+                                        </div><!-- /.col-lg-4 -->
+                                        
+                                        <div class="col-lg-2">
+
+                                        </div><!-- /.col-lg-2 -->
+                                    </div><!-- /.row -->
+                                </div>
+
+
+                                <hr class="featurette-divider">
+                                <!-- /END THE FEATURETTES -->
+                            </div><!-- /.container -->
+                        </section>
+
+
+
+
+
                     <p class="lead">
                         Ok, so reasonable.. depending on..
                     </p>
@@ -664,7 +742,7 @@
                                 <!-- FOOTER -->
                                 <footer class="container">
                                     <p class="float-right"><a href="#">Back to top</a></p>
-                                    <p>Maika Lindkvist Jensen (s164192) <br> 02.. Social DaGraphs and Interactions <br>
+                                    <p>Maika Lindkvist Jensen (s164192) <br> 02805 Social Graphs and Interactions <br>
                                         Technical University of Denmark <br> May 2021</p>
                                 </footer>
     </main>
