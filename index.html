@@ -123,12 +123,12 @@
             the wines in are data are from. We have kept it simple and only display the top 5 (besed on wine count)
             wineries in Italy and France respecitvely.Hover over the selected areas to view more details!
           </p>
-          <h5 class="featurette-heading">Map of Italy and the wineries in which most wines are from. </h5>
+          <h5>Map of Italy and the top 5 wineries </h5>
 
           <div>
             <object class="ob" data="images/Italy_map_winery.html" width="90%" height="550px"></object>
           </div>
-          <h5 class="featurette-heading">Map of France and the wineries in which most wines are from </h5>
+          <h5>Map of France and the top 5 wineries </h5>
 
           <div>
             <object class="ob" data="images/France_map_winery.html" width="90%" height="550px"></object>
@@ -192,9 +192,11 @@
           <div class="col-md-12">
             <p class="lead">
               Now to the real content. Below we have ecamined how wines are connected based on their flavours. If a wine
-              has the same flavor profile as another wine (e.g. both have main flavour black oak..), an edge has been added 
-              between the nodes (each node being a wine). In order to futher destinguish and categorize the wines, the nodes have been colored 
-              based on the main grape used to produce the wine. 
+              has the same flavor profile as another wine (e.g. both have main flavour black oak..), an edge has been
+              added
+              between the nodes (each node being a wine). In order to futher destinguish and categorize the wines, the
+              nodes have been colored
+              based on the main grape used to produce the wine.
               EXPLAIN HOW HAVE Colored nodes and so on
             </p>
             <h5>Graph of Italian wines </h5>
@@ -204,7 +206,7 @@
             </div>
             <p class="lead">
               we see that the graph is split in two in which most wines in the left blob .. </p>
-              <h5 class="featurette-heading">Graph of French wines </h5>
+            <h5>Graph of French wines </h5>
 
             <div>
               <img src="images/Graph_grapes_fr.png" width="95%" class="center-image">
@@ -212,21 +214,94 @@
             <p class="lead">
               we see that the graph ... </p>
               <p class="lead">
-                let's have a look at the degree distribution of the wines  </p>
+                lets look at the sizes  </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Italy</th>
+                      <th>France</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Nodes</td>
+                      <td>329</td>
+                      <td>285</td>
+                    </tr>
+                    <tr>
+                      <td>Edges</td>
+                      <td>26288</td>
+                      <td>21766</td>
+                    </tr>
+                  </tbody>
+                  </table>
+
+            <p class="lead">
+              let's have a look at the degree distribution of the wines </p>
             <div>
               <img src="images/Degree_dist.png" width="95%" class="center-image">
             </div>
 
+            <table>
+              <thead>
+                <tr>
+                  <th>Wine</th>
+                  <th>Degrees</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>San Donaci Fulgeo Negroamaro Salento 2016</td>
+                  <td>228</td>
+                </tr>
+                <tr>
+                  <td>Boccantino Primitivo - Susumaniello 2020</td>
+                  <td>227</td>
+                </tr>
+                <tr>
+                  <td>No Bull Zinfandel 2019</td>
+                  <td>227</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Wine</th>
+                  <th>Degrees</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Maison Barboulot Pinot Noir 2019</td>
+                  <td>209</td>
+                </tr>
+                <tr>
+                  <td>Foncalieu Réserve de l’Abbé Côtes du Rhône 2019</td>
+                  <td>209</td>
+                </tr>
+                <tr>
+                  <td>Beau-Rivage Rouge 2016</td>
+                  <td>209</td>
+                </tr>
+              </tbody>
+            </table>
+
             <p class="lead">
-              the french wine network.. ONLY USE INTERACTIVE? fix plot headings </p>
+              we see that a lot of wines have degree.. this is why graph is so packed, have a look at the interactive
+              graph below. zoom in and hover over to see details of neighbors.
+            </p>
+            <h5>Interactive graph of Italian wines </h5>
 
             <div>
               <object class="ob" data="images/graph_output_it.html" width="90%" height="550px"></object>
             </div>
-            <p class="lead">
-              bla </p>
+            <h5>Interactive graph of French wines </h5>
+
             <div>
-              <object class="ob" data="images/graph_output_fr.html" width="90%" height="550px"></object>
+              <object class="ob" data="images/graph_output_fr.html" width="90%" height="800px"></object>
             </div>
 
 
@@ -239,21 +314,30 @@
               <h2 class="featurette-heading">Wordclouds </h2>
 
               <p class="lead">
-                write about them here </p>
+                Should we look into what words are used to describe the wines? In the glasses below, you can see the top description words for 
+              Italian and French wines respectively. </p>
+
+              <h5>Itianian wc </h5>
               <div>
                 <img src="images/WC_it.png" width="95%" class="center-image">
               </div>
+
+              <div class="row">
+                <div class="column"></div>
+                <p class="lead">
+                  col1 </p>
+                <div class="column"></div>
+                <p class="lead">
+                  col2 </p>
+              </div>
+
+              <h5>French wc </h5>
               <div>
                 <img src="images/WC_fr.png" width="95%" class="center-image">
               </div>
 
-
-
               <p class="lead">
-                The illustration is interactive and can be used as you want. Check out your own neighbourhood! Do people
-                like your neighbourhood? Even though the rating score ranges from 0 to 100, absolutley the most review
-                rating scores are higher than 80, seen from the illustration, so visiters in general seem very satisfied
-                with their stay. Then no worries, new visiters will love to rent your housing!
+                Notice that Italian wines are mainly described as ...
               </p>
             </div>
           </div>
@@ -261,35 +345,34 @@
             <hr class="featurette-divider" id="id_communities">
             <div class="row featurette">
               <div class="col-md-12">
-                <h2 class="featurette-heading"> Competitors Prices</h2>
+                <h2 class="featurette-heading"> Exploring similar wines with community detection</h2>
                 <p class="lead">
-                  Before attacking the Airbnb market as a new host, it is worth investigating the prices of your
-                  competitive hosts's listings around Copenhagen and within your own neighbourhood. All investigated
-                  prices are 'per night' and in DKK. First an overview of all listing prices!
+                  Looking into the communities of the graphs...
                 </p>
+                <h5>Italian communities </h5>
+
                 <div>
                   <img src="images/Graph_it_partitions.png" width="95%" class="center-image">
                 </div>
+                <h5>French communities </h5>
+
                 <div>
                   <img src="images/Graph_fr_partitions.png" width="95%" class="center-image">
                 </div>
                 <p class="lead">
-                  lets see the wordclouds
-                </p>
+they are both split into 3... lets have a look at the words that are used to describe each community                </p>
+<h5>italian community wc</h5>
+
                 <div>
                   <img src="images/WC_it_communities.png" width="95%" class="center-image">
                 </div>
+                <h5>french community wc</h5>
+
                 <div>
                   <img src="images/WC_fr_communities.png" width="95%" class="center-image">
                 </div>
                 <p class="lead">
-                  We know that Indre by has the highest listing prices per night, and that the listing prices become
-                  lower the fare we get from the centrum. A little zoom on the different neighbourhoods in the map
-                  independently makes you able to go around tracking the information you are looking for. Check out your
-                  own neighbourhood and compare the prices with other neighbourhoods'. This same investigation can be
-                  performed on the interactive visualization below. From here it is clear that the regions providing the
-                  lowest prices are Bispebjerg, Vanløse and Brønshøj-Husum being the more western neighbourhoods of
-                  Copenhagen.
+                  it is seen that the different communities are described ...
 
                 </p>
 
@@ -299,7 +382,7 @@
               <hr class="featurette-divider" id="id_sentiment">
               <div class="row featurette">
                 <div class="col-md-12">
-                  <h2 class="featurette-heading"> Price Guide - Predict the Price of your own Housing</h2>
+                  <h2 class="featurette-heading"> Sentiment Analysis</h2>
                   <p class="lead">
                     positive italy
                   </p>
@@ -352,37 +435,26 @@
                     </tbody>
                   </table>
                   <p class="lead">
-                    Try fill out fvddthe specifications of your housing and predict the price you can take per night!
-                    Good
-                    luck!fdf
+                    bla bla 
                   </p>
 
 
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Wine</th>
-                        <th>Number of nodes</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>San Donaci Fulgeo Negroamaro Salento 2016</td>
-                        <td>228</td>
-                      </tr>
-                      <tr>
-                        <td>Boccantino Primitivo - Susumaniello 2020</td>
-                        <td>227</td>
-                      </tr>
-                      <tr>
-                        <td>No Bull Zinfandel 2019</td>
-                        <td>227</td>
-                      </tr>
-                    </tbody>
-                  </table>
+
 
                 </div>
 
+                <! --==================================================-->
+                <hr class="featurette-divider" id="id_conclusion">
+                <div class="row featurette">
+                  <div class="col-md-12">
+                    <h2 class="featurette-heading"> ..</h2>
+                    <p class="lead">
+                      Looking into the communities of the graphs...
+                    </p>
+                    
+    
+                  </div>
+                </div>
 
                 <!-- ================================================== -->
                 <hr class="featurette-divider" id="id_data">
