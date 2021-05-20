@@ -6,6 +6,14 @@
     th {
         font-size: 13px
     }
+
+    table,
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
 </style>
 
 <!doctype html>
@@ -259,29 +267,52 @@
                             <img src="images/Degree_dist.png" width="95%" class="center-image">
                         </div>
 
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Wine</th>
-                                    <th>Degrees</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>San Donaci Fulgeo Negroamaro Salento 2016</td>
-                                    <td>228</td>
-                                </tr>
-                                <tr>
-                                    <td>Boccantino Primitivo - Susumaniello 2020</td>
-                                    <td>227</td>
-                                </tr>
-                                <tr>
-                                    <td>No Bull Zinfandel 2019</td>
-                                    <td>227</td>
-                                </tr>
-                            </tbody>
-                        </table>
 
+
+
+
+
+                        <section id="mid">
+                            <div class="row featurette">
+                                <!--<div class="row featurette"> -->
+                                <div class="container marketing pt-5">
+                                    <div class="row">
+
+                                        <!--<div class="anchor" id="id_data"> </div> 
+<div class="container marketing pt-5"> -->
+
+                                        <!-- Three columns of text below the carousel -->
+                                        <div class="col-lg-2">
+
+                                        </div><!-- /.col-lg-2 -->
+                                        <div class="col-lg-4">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Wine</th>
+                                                        <th>Degrees</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>San Donaci Fulgeo Negroamaro Salento 2016</td>
+                                                        <td>228</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Boccantino Primitivo - Susumaniello 2020</td>
+                                                        <td>227</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>No Bull Zinfandel 2019</td>
+                                                        <td>227</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div><!-- /.col-lg-4 -->
+                                        
+                                        <div class="col-lg-4">
+                                            
+                                            
                         <table>
                             <thead>
                                 <tr>
@@ -304,6 +335,26 @@
                                 </tr>
                             </tbody>
                         </table>
+                                        </div><!-- /.col-lg-4 -->
+                                        
+                                        <div class="col-lg-2">
+
+                                        </div><!-- /.col-lg-2 -->
+                                    </div><!-- /.row -->
+                                </div>
+
+
+                                <hr class="featurette-divider">
+                                <!-- /END THE FEATURETTES -->
+                            </div><!-- /.container -->
+                        </section>
+
+
+
+
+
+
+
 
                         <p class="lead">
                             we see that a lot of wines have degree.. this is why graph is so packed, have a look at the
@@ -347,6 +398,11 @@
                             <h5>French wc </h5>
                             <div>
                                 <img src="images/WC_fr.png" width="95%" class="center-image">
+                            </div>
+
+                            <h5>Both </h5>
+                            <div>
+                                <img src="images/WC_both.png" width="95%" class="center-image">
                             </div>
 
                             <p class="lead">
@@ -473,26 +529,26 @@
 
                                             </div><!-- /.col-lg-2 -->
                                             <div class="col-lg-4">
-                                                <h2>tab2</h2>
                                                 <table>
+                                                    <caption style="caption-side:bottom" style= "text-align:center">My savings</caption>
                                                     <thead>
                                                         <tr>
                                                             <th>Region</th>
-                                                            <th>sentiment?</th>
+                                                            <th>Number of nodes</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>Var</td>
-                                                            <td>0.24</td>
+                                                            <td>sentiment?o</td>
+                                                            <td>0.229</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Champagne</td>
-                                                            <td>0.198</td>
+                                                            <td>Emilia-Romagna</td>
+                                                            <td>0.166</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Bordeaux</td>
-                                                            <td>0.196</td>
+                                                            <td>Langhe</td>
+                                                            <td>0.156</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -500,8 +556,9 @@
                                             
                                             <div class="col-lg-4">
                                                 
-                                                <h2>tab 1</h2>
                                                 <table>
+                                                    <caption style="caption-side:bottom" style= "text-align:center">My savings</caption>
+
                                                     <thead>
                                                         <tr>
                                                             <th>Region</th>
